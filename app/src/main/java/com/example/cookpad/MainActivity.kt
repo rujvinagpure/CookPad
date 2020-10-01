@@ -6,6 +6,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
+import com.example.cookpad.fragments.FragmentFour
+import com.example.cookpad.fragments.FragmentOne
+import com.example.cookpad.fragments.FragmentThree
+import com.example.cookpad.fragments.FragmentTwo
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
