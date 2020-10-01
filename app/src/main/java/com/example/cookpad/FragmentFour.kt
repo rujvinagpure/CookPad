@@ -25,4 +25,6 @@ class FragmentFour : Fragment() {
         tv_fragment_name.text="Fragment Four"
     }
 
+
+
 }
