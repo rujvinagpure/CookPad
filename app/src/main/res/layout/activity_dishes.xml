@@ -20,7 +20,7 @@
         android:layout_gravity="center"
         android:fontFamily="@font/bubblegum_sans"
         android:gravity="center"
-        android:text="Dishes under this category"
+        android:text="Choose your Dish"
         android:textColor="#ED5185"
         android:textSize="50sp"
         android:textStyle="bold" />
