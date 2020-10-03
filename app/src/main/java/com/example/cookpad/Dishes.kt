@@ -1,7 +1,3 @@
-
-
-
-
 package com.example.cookpad
 
 import androidx.appcompat.app.AppCompatActivity

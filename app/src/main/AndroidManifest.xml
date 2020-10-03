@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cookpad">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,13 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CookPad">
         <activity android:name=".Dishes"></activity>
-        <activity android:name=".MealCategory" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MealCategory" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
 
         <meta-data
