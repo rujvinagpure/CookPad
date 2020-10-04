@@ -25,12 +25,9 @@ class MealCategory : AppCompatActivity() {
         apiclient = ApiClient()
         recyclerView = findViewById(R.id.recyclerthing)
         val call =
-            ApiClient.apiinterface.getCategory
+            ApiClient.apiinterface.getCategory()
         call!!.enqueue(object : Callback<User?> {
-            override fun onResponse(
-                call: Call<User?>,
-                response: Response<User?>
-            ) {
+            override fun onResponse(call: Call<User?>, response: Response<User?>) {
 
                 Log.d("manik","working")
 
@@ -39,10 +36,7 @@ class MealCategory : AppCompatActivity() {
                 recyclerView.layoutManager = LinearLayoutManager(applicationContext,LinearLayoutManager.VERTICAL,false)
             }
 
-            override fun onFailure(
-                call: Call<User?>,
-                t: Throwable
-            ) {
+            override fun onFailure(call: Call<User?>, t: Throwable) {
 
                 Log.d("manik", t.toString())
             }

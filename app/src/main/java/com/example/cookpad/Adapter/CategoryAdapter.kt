@@ -12,10 +12,7 @@ import com.example.cookpad.Model.User
 import com.example.cookpad.R
 import com.squareup.picasso.Picasso
 
-class CategoryAdapter(
-    var context: Context,
-    var response: User
-) : RecyclerView.Adapter<CountryHolder>() {
+class CategoryAdapter(var context: Context, var response: User) : RecyclerView.Adapter<CountryHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountryHolder {
         val layoutInflater = LayoutInflater.from(context)
         val view =
@@ -25,9 +22,10 @@ class CategoryAdapter(
 
     override fun onBindViewHolder(holder: CountryHolder, position: Int) {
         holder.textView.text = response.categories?.get(position)?.strCategory
+        Picasso.get().load(response.categories!!.get(position).strCategoryThumb).into(holder.imageView)
     }
     override fun getItemCount(): Int {
-        return response.categories!!.size
+        return response.categories!!.size //14
     }
 
     inner class CountryHolder(itemView: View) :
