@@ -26,7 +26,7 @@ class Dishes : AppCompatActivity() {
         var name: String? = intent.getStringExtra("name")
         Log.d("okay", name!!)
         apiclient = ApiClient()
-        recyclerView = findViewById(R.id.list_dishes)
+        recyclerView = findViewById(R.id.recycler_dishes)
         val call =
                 ApiClient.apiinterface.getDishes(name.toString())
 
@@ -35,8 +35,8 @@ class Dishes : AppCompatActivity() {
 
                 Log.d("manik","working")
 
-                var diahAdapter: DishAdapter = DishAdapter(applicationContext,response.body()!!)
-                recyclerView.adapter = diahAdapter
+                var dishAdapter: DishAdapter = DishAdapter(applicationContext,response.body()!!)
+                recyclerView.adapter = dishAdapter
                 recyclerView.layoutManager = LinearLayoutManager(applicationContext,LinearLayoutManager.VERTICAL,false)
             }
 
