@@ -30,7 +30,7 @@ class CategoryAdapter(var context: Context, var response: User) : RecyclerView.A
         holder.bindView(position)
     }
     override fun getItemCount(): Int {
-        return response.categories!!.size //14
+        return response.categories !!.size //14
     }
 
     inner class CountryHolder(itemView: View) :

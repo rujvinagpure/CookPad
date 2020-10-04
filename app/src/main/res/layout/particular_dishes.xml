@@ -5,12 +5,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="126dp"
-        android:background="#52EFBFBC"
-        android:padding="10dp">
+        android:layout_height="133dp"
+       android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_border"
+        android:padding="10dp"
+        android:backgroundTint="#36EC1809">
 
 
         <TextView
+            android:id="@+id/text_dish"
             android:layout_width="match_parent"
             android:layout_height="50dp"
 
@@ -20,16 +23,18 @@
             android:fontFamily="@font/bubblegum_sans"
             android:text="Dish One"
             android:textColor="#EC1809"
+
             android:textSize="35sp"
             android:textStyle="normal" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="100dp"
+            android:id="@+id/image_dish"
+            android:layout_width="107dp"
             android:layout_height="100dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp"
             android:src="@drawable/image_one" />
 
     </RelativeLayout>
