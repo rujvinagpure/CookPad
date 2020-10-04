@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="133dp"
-       android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/rounded_border"
-        android:padding="10dp"
-        android:backgroundTint="#36EC1809">
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_dish"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:padding="5dp"
+            android:src="@drawable/image_one"
+            app:strokeColor="#FF9800"
+            app:strokeWidth="3dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"/>
 
         <TextView
             android:id="@+id/text_dish"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="44dp"
             android:fontFamily="@font/bubblegum_sans"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:text="Dish One"
-            android:textColor="#EC1809"
-
-            android:textSize="35sp"
+            android:textColor="#FFC107"
+            android:textSize="30dp"
             android:textStyle="normal" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/image_dish"
-            android:layout_width="107dp"
-            android:layout_height="100dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/image_one" />
 
-    </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
