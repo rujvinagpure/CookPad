@@ -16,4 +16,5 @@ class Meal {
     @Expose
     var idMeal: String? = null
 
+
 }

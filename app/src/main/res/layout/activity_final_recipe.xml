@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Model.dishes.FinalRecipe"
+    android:background="@drawable/backg"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Random Dish"
+        android:textColor="#7449A8"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Instructions:"
+        android:textColor="#EDECEF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_dish_one"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/image_one"
+        />
+<TextView
+    android:id="@+id/recipe"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/instruction_one"
+
+    android:textColor="@color/white"
+    android:textStyle="normal"
+    android:textSize="15sp"
+    />
+
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
