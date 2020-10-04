@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#66E4A8BC">
+        android:background="@drawable/rounded_dish"
+        android:backgroundTint="#75EDC8D5">
 
 
     <TextView
@@ -21,13 +22,14 @@
         android:fontFamily="@font/bubblegum_sans"
         android:gravity="center"
         android:text="Choose your Dish"
-        android:textColor="#ED5185"
-        android:textSize="50sp"
+
+        android:textColor="#EF0655"
+        android:textSize="45sp"
         android:textStyle="bold" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_dishes"
+        android:id="@+id/recycler_dishes"
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
